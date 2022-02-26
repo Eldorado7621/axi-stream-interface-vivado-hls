@@ -1,0 +1,41 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.932062",
+   "Default View_TopLeft":"884,-11",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 7 -x 2420 -y 370 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 7 -x 2420 -y 390 -defaultsOSRD
+preplace inst doGain_0 -pg 1 -lvl 3 -x 830 -y 120 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 2150 -y 460 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 470 -y 450 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 110 -y 560 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 4 -x 1220 -y 130 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 5 -x 1760 -y 160 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 5 -x 1760 -y 510 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 -80 450 300 210 640 210 1030 0 1440 310 1910 620 2390
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 -70 460 290J 630 NJ 630 NJ 630 NJ 630 NJ 630 2380
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 4 310 220 650 220 1040 10 1430
+preplace netloc axi_dma_0_mm2s_introut 1 4 1 1410 170n
+preplace netloc axi_dma_0_s2mm_introut 1 4 1 1400 190n
+preplace netloc xlconcat_0_dout 1 5 1 1920 500n
+preplace netloc doGain_0_interrupt 1 3 2 1010J -10 1420
+preplace netloc processing_system7_0_DDR 1 6 1 NJ 370
+preplace netloc processing_system7_0_FIXED_IO 1 6 1 NJ 390
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 320 610 NJ 610 NJ 610 NJ 610 NJ 610 2400
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 630 90n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 2 620 30 1020J
+preplace netloc axi_dma_0_M_AXI_MM2S 1 4 1 N 70
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 1920 160n
+preplace netloc doGain_0_outStream 1 3 1 N 100
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 2 3 650 -20 NJ -20 1400
+preplace netloc axi_dma_0_M_AXI_S2MM 1 4 1 N 90
+levelinfo -pg 1 -100 110 470 830 1220 1760 2150 2420
+pagesize -pg 1 -db -bbox -sgen -100 -200 2540 660
+"
+}
+{
+   "da_axi4_cnt":"4",
+   "da_ps7_cnt":"1"
+}

@@ -207,3 +207,59 @@ selectButton("NEXT", "Next >"); // JButton
 selectButton("BACK", "< Back"); // JButton
 // 'n' command handler elapsed time: 10 seconds
 dismissDialog("Export Hardware Platform"); // g
+// Elapsed time: 711 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {/home/sam/git_workspace/doGain_axi_stream_vivado/doGain_axi_stream_vivado.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file </home/sam/git_workspace/doGain_axi_stream_vivado/doGain_axi_stream_vivado.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1255 ms.
+// JavaFX intialization before: 1645891038094
+// JavaFX initialization after: 1645891038527
+// [Engine Memory]: 2,361 MB (+98321kb) [00:14:16]
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// 'bW' command handler elapsed time: 4 seconds
+dismissDialog("Open Block Design"); // bA
+// [Engine Memory]: 2,495 MB (+16944kb) [00:14:17]
+// [GUI Memory]: 158 MB (+10943kb) [00:14:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,515 MB. GUI used memory: 112 MB. Current time: 2/26/22, 4:57:21 PM CET
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// Elapsed time: 10 seconds
+dismissDialog("Re-customize IP"); // N
+// Elapsed time: 64 seconds
+selectButton("PS-PL Configuration", "PS-PL Configuration"); // j
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "GP Slave AXI Interface ; GP Slave AXI Interface ; GP Slave AXI Interface", 2); // aw
+// Elapsed time: 16 seconds
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "GP Slave AXI Interface ; GP Slave AXI Interface ; GP Slave AXI Interface", 2); // aw
+// Elapsed time: 11 seconds
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "General ; General ; General", 0); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "General ; General ; General", 0); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "PS-PL Cross Trigger interface ; 0 ; Enables PL cross trigger signals to PS and vice-versa", 6); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "PS-PL Cross Trigger interface ; 0 ; Enables PL cross trigger signals to PS and vice-versa", 6); // aw
+expandTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "DMA Controller ; DMA Controller ; DMA Controller", 5); // aw
+collapseTreeTable(PAResourceEtoH.GenSettingTreeTablePanel_GEN_SETTING_TREE_TABLE, "DMA Controller ; DMA Controller ; DMA Controller", 5); // aw
+// Elapsed time: 53 seconds
+dismissDialog("Re-customize IP"); // r
+// [GUI Memory]: 174 MB (+8268kb) [00:17:10]
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 120 MB. Current time: 2/26/22, 5:27:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 110 MB. Current time: 2/26/22, 5:57:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 6:27:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 6:57:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 7:27:21 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 7:57:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 8:27:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 8:57:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 9:27:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 9:57:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,440 MB. GUI used memory: 108 MB. Current time: 2/26/22, 10:27:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,441 MB. GUI used memory: 108 MB. Current time: 2/26/22, 10:57:22 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,441 MB. GUI used memory: 108 MB. Current time: 2/26/22, 11:27:22 PM CET

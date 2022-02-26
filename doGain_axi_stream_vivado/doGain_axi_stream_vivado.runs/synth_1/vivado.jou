@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Feb 26 16:30:47 2022
+# Process ID: 1309
+# Current directory: /home/sam/git_workspace/doGain_axi_stream_vivado/doGain_axi_stream_vivado.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/sam/git_workspace/doGain_axi_stream_vivado/doGain_axi_stream_vivado.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/sam/git_workspace/doGain_axi_stream_vivado/doGain_axi_stream_vivado.runs/synth_1/vivado.jou
+# Running On: sam-HP-Pavilion-Laptop-15-eg0xxx, OS: Linux, CPU Frequency: 1065.337 MHz, CPU Physical cores: 4, Host memory: 16540 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
