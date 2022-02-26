@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sat Feb 26 16:42:56 2022
+# Process ID: 10246
+# Current directory: /home/sam/git_workspace/axi-stream-interface-vivado-hls
+# Command line: vivado
+# Log file: /home/sam/git_workspace/axi-stream-interface-vivado-hls/vivado.log
+# Journal file: /home/sam/git_workspace/axi-stream-interface-vivado-hls/vivado.jou
+# Running On: sam-HP-Pavilion-Laptop-15-eg0xxx, OS: Linux, CPU Frequency: 3587.367 MHz, CPU Physical cores: 4, Host memory: 16540 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/sam/git_workspace/doGain_axi_stream_vivado/doGain_axi_stream_vivado.xpr
+update_compile_order -fileset sources_1
+write_hw_platform -fixed -include_bit -force -file /home/sam/git_workspace/doGain_axi_stream_vivado/design_1_wrapper.xsa
