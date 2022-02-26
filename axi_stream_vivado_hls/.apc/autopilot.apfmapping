@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="main.cpp" path="/home/sam/git_workspace/axi-stream-interface-vivado-hls/main.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="test_main.cpp" path="/home/sam/git_workspace/axi-stream-interface-vivado-hls/test_main.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

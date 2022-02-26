@@ -1,0 +1,127 @@
+
+
+================================================================
+== Synthesis Summary Report of 'doGain'
+================================================================
++ General Information: 
+    * Date:           Sat Feb 26 15:13:14 2022
+    * Version:        2021.2 (Build 3367213 on Tue Oct 19 02:47:39 MDT 2021)
+    * Project:        axi_stream_vivado_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z010-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+------+---------+-----------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |       Modules      | Issue|      | Latency |  Latency  | Iteration|         | Trip |          |      |        |          |          |     |
+    |       & Loops      | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |    FF    |    LUT   | URAM|
+    +--------------------+------+------+---------+-----------+----------+---------+------+----------+------+--------+----------+----------+-----+
+    |+ doGain            |     -|  0.39|     1004|  1.004e+04|         -|     1005|     -|        no|     -|  3 (3%)|  733 (2%)|  447 (2%)|    -|
+    | o VITIS_LOOP_14_1  |     -|  7.30|     1002|  1.002e+04|         4|        1|  1000|       yes|     -|       -|         -|         -|    -|
+    +--------------------+------+------+---------+-----------+----------+---------+------+----------+------+--------+----------+----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++----------------+------------+---------------+--------+----------+
+| Interface      | Data Width | Address Width | Offset | Register |
++----------------+------------+---------------+--------+----------+
+| s_axi_CRTL_BUS | 32         | 5             | 16     | 0        |
++----------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+| Interface      | Register | Offset | Width | Access | Description                      | Bit Fields                                               |
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+| s_axi_CRTL_BUS | CTRL     | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART |
+| s_axi_CRTL_BUS | GIER     | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                 |
+| s_axi_CRTL_BUS | IP_IER   | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN 5=CHAN2_INT_EN             |
+| s_axi_CRTL_BUS | IP_ISR   | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST 5=CHAN2_INT_ST             |
+| s_axi_CRTL_BUS | gain     | 0x10   | 32    | W      | Data signal of gain              |                                                          |
++----------------+----------+--------+-------+--------+----------------------------------+----------------------------------------------------------+
+
+* AXIS
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| inStream  | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
+| outStream | both          | 32    | 6     | 5   | 4     | 1     | 1      | 4     | 2     | 1      |
++-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++-----------+-----------+--------------------------------------------+
+| Argument  | Direction | Datatype                                   |
++-----------+-----------+--------------------------------------------+
+| inStream  | in        | stream<hls::axis<ap_int<32>, 2, 5, 6>, 0>& |
+| outStream | out       | stream<hls::axis<ap_int<32>, 2, 5, 6>, 0>& |
+| gain      | in        | int                                        |
++-----------+-----------+--------------------------------------------+
+
+* SW-to-HW Mapping
++-----------+----------------+-----------+--------------------------------+
+| Argument  | HW Interface   | HW Type   | HW Info                        |
++-----------+----------------+-----------+--------------------------------+
+| inStream  | inStream       | interface |                                |
+| outStream | outStream      | interface |                                |
+| gain      | s_axi_CRTL_BUS | register  | name=gain offset=0x10 range=32 |
++-----------+----------------+-----------+--------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++-------------------------+-----+--------+---------------+-----+--------+---------+
+| Name                    | DSP | Pragma | Variable      | Op  | Impl   | Latency |
++-------------------------+-----+--------+---------------+-----+--------+---------+
+| + doGain                | 3   |        |               |     |        |         |
+|   idx_2_fu_147_p2       | -   |        | idx_2         | add | fabric | 0       |
+|   mul_32s_32s_32_2_1_U1 | 3   |        | valOut_data_V | mul | auto   | 1       |
++-------------------------+-----+--------+---------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== User Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+---------------------------------------+---------------------------------+
+| Type      | Options                               | Location                        |
++-----------+---------------------------------------+---------------------------------+
+| interface | axis port=outStream                   | main.cpp:9 in dogain, outStream |
+| interface | axis port=inStream                    | main.cpp:10 in dogain, inStream |
+| interface | s_axilite port=gain bundle=CRTL_BUS   | main.cpp:11 in dogain, gain     |
+| interface | s_axilite port=return bundle=CRTL_BUS | main.cpp:12 in dogain, return   |
+| pipeline  |                                       | main.cpp:16 in dogain           |
++-----------+---------------------------------------+---------------------------------+
+
+

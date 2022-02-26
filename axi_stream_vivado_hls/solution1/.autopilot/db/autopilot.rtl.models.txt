@@ -1,0 +1,17 @@
+doGain_mul_32s_32s_32_2_1
+doGain_CRTL_BUS_s_axi
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain

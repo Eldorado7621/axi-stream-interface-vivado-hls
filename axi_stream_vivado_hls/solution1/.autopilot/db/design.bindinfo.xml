@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindInfo>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op icmp" ID="" IMPL="auto" LATENCY="0" OPTYPE="icmp" PRAGMA="" RTLNAME="icmp_ln14_fu_141_p2" SOURCE="main.cpp:14" VARIABLE="icmp_ln14" MODULE="doGain" LOOP="VITIS_LOOP_14_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op add" ID="" IMPL="fabric" LATENCY="0" OPTYPE="add" PRAGMA="" RTLNAME="idx_2_fu_147_p2" SOURCE="main.cpp:14" VARIABLE="idx_2" MODULE="doGain" LOOP="VITIS_LOOP_14_1" BUNDLEDNAME="" DSP="0" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="op" DISPLAY="bind_op mul" ID="" IMPL="auto" LATENCY="1" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_32_2_1_U1" SOURCE="/tools/Xilinx/Vitis_HLS/2021.2/common/technology/autopilot/ap_int.h:70" VARIABLE="valOut_data_V" MODULE="doGain" LOOP="VITIS_LOOP_14_1" BUNDLEDNAME="" DSP="3" BRAM="0" URAM="0"/>
+	<BindNode BINDTYPE="adapter" DISPLAY="bind_adapter axilite" ID="" IMPL="" LATENCY="" OPTYPE="" PRAGMA="yes" RTLNAME="CRTL_BUS_s_axi_U" SOURCE="" VARIABLE="" MODULE="doGain" LOOP="" BUNDLEDNAME="CRTL_BUS" DSP="0" BRAM="0" URAM="0"/>
+</BindInfo>
