@@ -57,7 +57,10 @@
   },
   "HlsSolution": {
     "FlowTarget": "vivado",
-    "DirectiveTcl": ["set_directive_top doGain -name doGain"],
+    "ConfigTcl": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog"
+    ],
     "ProfileOption": "0",
     "ProfileType": "none",
     "KernelName": "doGain"
@@ -93,6 +96,8 @@
     ],
     "Verilog": [
       "impl\/verilog\/doGain_CRTL_BUS_s_axi.v",
+      "impl\/verilog\/doGain_hls_deadlock_idx0_monitor.v",
+      "impl\/verilog\/doGain_hls_deadlock_kernel_monitor_top.vh",
       "impl\/verilog\/doGain_mul_32s_32s_32_2_1.v",
       "impl\/verilog\/doGain_regslice_both.v",
       "impl\/verilog\/doGain.v"
@@ -647,7 +652,7 @@
   "GenerateBdFiles": "0",
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-02-26 15:13:14 CET",
+    "Time": "2022-02-26 16:00:26 CET",
     "ToolName": "vitis_hls",
     "ToolVersion": "2021.2"
   }

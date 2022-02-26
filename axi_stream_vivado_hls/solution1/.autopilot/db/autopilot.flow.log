@@ -910,3 +910,282 @@ Command   csim_design done; 2.09 sec.
 INFO: [HLS 200-111] Finished Command csim_design CPU user time: 2.75 seconds. CPU system time: 0.25 seconds. Elapsed time: 2.09 seconds; current allocated memory: -937.109 MB.
 Command ap_source done; 3.22 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1 opened at Sat Feb 26 16:00:25 CET 2022
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     set_part xc7z010clg400-1 
+Execute       create_platform xc7z010clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: /tools/Xilinx/Vitis_HLS/2021.2/lib/lnx64.o/librdi_hlsvwrap.so
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: /tools/Xilinx/Vivado/2021.2/data/parts/arch.xml
+DBG:HLSDevice: init success
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+INFO: [HLS 200-1611] Setting target device to 'xc7z010-clg400-1'
+Command       create_platform done; 0.99 sec.
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute       ap_part_info -name xc7z010-clg400-1 -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 1.09 sec.
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 1.1 sec.
+Execute   set_part xc7z010clg400-1 
+INFO: [HLS 200-1510] Running: set_part xc7z010clg400-1 
+Execute     create_platform xc7z010clg400-1 -board  
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/zynq_dsp48e1.hlp 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.12 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   export_design -rtl verilog -format ip_catalog 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -library 
+Execute     get_config_export -output 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -rtl=verilog 
+INFO-FLOW: DBG:PUTS: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_rtl -module_auto_prefix 
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:PUTS:   auto_impl: pack: -export -rtl verilog
+INFO-FLOW: DBG:PROC: ::AESL_AUTOIMPL::auto_impl args='-export -rtl verilog'
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::auto_generate args='-export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag'
+INFO-FLOW: DBG:PUTS:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:PUTS:       initCTypeInfo top_module=doGain xml_exists=0
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.rtl_wrap.cfg.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.rtl_wrap.cfg.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.rtl_wrap.cfg.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     get_config_export -deadlock_detection 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to doGain
+Execute     get_config_export -deadlock_detection 
+INFO-FLOW: DBG:PUTS: Skipping loadAnalyze_DB, #g_database=16
+INFO-FLOW: DBG:PUTS:       generate_json generate_bd_files=0 generate_xo_files=false #modelList=17 #gSsdmPorts=0
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='false' modelList='doGain_mul_32s_32s_32_2_1
+doGain_CRTL_BUS_s_axi
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain_regslice_both
+doGain
+' rtl_lang='vlog' bootstrap_tcl='false' outdir='' outfilename=''
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/top-io-be.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.compgen.dataonly.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.compgen.dataonly.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.rtl_wrap.cfg.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.compgen.dataonly.tcl 
+Execute     get_config_export -format 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     get_solution -flow_target 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -kernel_profile 
+Execute     get_config_rtl -stall_sig_gen 
+Execute     get_config_rtl -profile 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.constraint.tcl 
+Execute     sc_get_clocks doGain 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_file 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_debug -directory 
+Execute     get_config_export -deadlock_detection 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:PUTS:       cosim_export_main adding deadlock detection to doGain
+Execute     get_config_export -deadlock_detection 
+INFO-FLOW: DBG:PUTS:       copy ip_driver_dir 1_0 /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/driver
+Execute     get_config_export -format 
+INFO-FLOW: DBG:PUTS:       generate_ip_script #gSsdmPorts=0 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.compgen.dataonly.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.compgen.dataonly.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:PUTS:       generate_top_info
+INFO-FLOW: DBG:PUTS:       prepArgInfo -> loadAnalyze_DB top_module=doGain
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.rtl_wrap.cfg.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.rtl_wrap.cfg.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.rtl_wrap.cfg.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -ip_xdc_ooc_file 
+Execute     get_config_export -ip_xdc_file 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.constraint.tcl 
+INFO-FLOW: DBG:PUTS:       generate_ipi_example_script
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS:       generate_syn_sh
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS:       generate_imp_constraints
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.constraint.tcl 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/doGain.tbgen.tcl 
+INFO-FLOW: DBG:PUTS:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xc7z010-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z010-clg400-1 -data info -quiet 
+INFO-FLOW: DBG:PUTS: read_platform_lib /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/common.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/util.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source /tools/Xilinx/Vitis_HLS/2021.2/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:     IP package: exec /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/impl/ip/pack.sh
+INFO-FLOW: DBG:PUTS:     IP package: success /home/sam/git_workspace/axi-stream-interface-vivado-hls/axi_stream_vivado_hls/solution1/impl/ip/pack.sh
+Execute     get_config_export -output 
+Execute     send_msg_by_id INFO @200-802@%s axi_stream_vivado_hls/solution1/impl/export.zip 
+INFO: [HLS 200-802] Generated output file axi_stream_vivado_hls/solution1/impl/export.zip
+Command   export_design done; 17.13 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 14.84 seconds. CPU system time: 0.83 seconds. Elapsed time: 17.13 seconds; current allocated memory: -929.336 MB.
+Command ap_source done; 18.35 sec.
+Execute cleanup_all 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="doGain" xd:componentRef="doGain" xd:initiationInterval="1005" xd:clockPeriod="10" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="inStream" xd:originalName="inStream" xd:direction="in" xd:interfaceRef="inStream" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="outStream" xd:originalName="outStream" xd:direction="out" xd:interfaceRef="outStream" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="gain" xd:originalName="gain" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="1004" xd:worst-case="1004" xd:average-case="1004"/>
+  <xd:resourceEstimates xd:LUT="447" xd:FF="733" xd:BRAM="0" xd:DSP="3"/>
+</xd:acceleratorMap>
